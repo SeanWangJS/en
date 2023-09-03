@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Some Thoughts on Attention Mechanism
-tags: Transformer, Attention
+tags: Transformer Attention
 ---
 
 Recently, I have been working on implementing a plain transformer on my own for practice. While writing about the attention function, I became curious about how it works and wanted to gain a deeper understanding.
@@ -14,7 +14,7 @@ $$
 
 Assuming that all matrices are of shape $[L, d_k]$, the computation is quite simple. The following figure illustrates the idea of attention, ignoring the divide and softmax operation.
 
-![](/resources/2023-09-01-attention/attention_attn.png)
+![](/en/resources/2023-09-01-attention/attention_attn.png)
 
 The $Q, K,$ and $V$ matrices represent the semantic information of corresponding tokens. The first step of the attention function computes $S = QK^\top$, where each row vector represents the relationship between a specific token and all other tokens in the sequence. A higher value indicates a stronger relationship.
 
